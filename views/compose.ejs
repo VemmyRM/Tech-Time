@@ -1,13 +1,18 @@
-
+<!-- page header -->
 <%- include("partials/header"); -%>
+
     <h1>Compose</h1>
+    <!-- form posting to the compose route on submission to create a new post -->
     <form class="" action="/compose" method="post">
       <div class="form-group">
+        <!-- input for post title -->
         <label>Title</label>
         <input class="form-control" type="text" name="postTitle">
-        <label>Post</label>
+        <!-- input for post content -->
+        <label>Content</label>
         <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
       </div>
+      <!-- submit button to create post -->
       <button class="btn btn-primary" type="submit" name="button">Publish</button>
     </form>
 

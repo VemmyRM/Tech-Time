@@ -1,11 +1,16 @@
+<!-- page header -->
 <%- include("partials/header"); -%>
+
+<!-- homepage info -->
 <h1>Home</h1>
 <p><%= startingContent %></p>
+
+<!-- create post button redirecting to the compose page -->
 <button class="btn btn-md btn-success end-btn" onclick="location.href = '/compose'">Create a post</button>
 <div class="row">
   <div class="col-sm-9">
+    <!-- for each post in the database, create a card with its title, ontent and link -->
     <% posts.forEach(function(post){ %>
-
       <div class="card bg-light bg-gradient border-secondary">
         <div class="card-body">
           <h5 class="card-title"><%=post.title%></h5>
@@ -14,15 +19,18 @@
         </div>
       </div>
     <% }) %> 
+    <!-- submit button -->
     <button class="btn btn-lg btn-success end-btn" onclick="location.href = '/compose'">Create a post</button>
     <br>
   </div>
   <div class="col-sm-3">
+    <!-- quick links card with a link to each post -->
     <div class="long-card card bg-gradient border-secondary bg-light">
       <div class="card-header center-text">
         Quick Links
       </div>
       <div class="card-body">
+        <!-- creates a p tag for each post with its title and link -->
         <% posts.forEach(function(post){ %>
               <p class="card-text"><a href="/posts/<%=post._id%>"><%=post.title%></a></p>
         <% }) %> 
@@ -31,4 +39,5 @@
   </div>
 </div>
 
+<!-- poge footer -->
 <%- include("partials/footer"); -%>
