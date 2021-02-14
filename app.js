@@ -8,10 +8,10 @@ const mongoose = require("mongoose");
 const { update } = require("lodash");
 
 //Text for the homepage
-const homeStartingContent = "Welcome to TechTime, a blog site where anyone can learn or post about technology! Find a post explaining a tech topic you want to learn about, or create a post to explain a topic you're passionate about."
+const homeStartingContent = "Welcome to Tech Talk, a blog site where anyone can learn or post about technology! Find a post explaining a tech topic you want to learn about, or create a post to explain a topic you're passionate about."
 //text for the about page
 const aboutContent =
-  "Welcome to TechTime! The world of tech can be vast and daunting for first-time learners. So much of the content online is aimed towards a more advanced audience, making technological innovations difficult for beginners to understand. This site was created to help complete beginners better understand various tech concepts. Using the Feynman Technique, anyone can make a post explaining a tech topic in a beginner-friendly way. By posting about the lastest tech news, or exciting tech concepts, you can help us spread knowledge while cementing your own knowledge. Adapted from a challenge for www.appbrewery.com.";
+  "Welcome to Tech Talk! The world of tech can be vast and daunting for first-time learners. So much of the content online is aimed towards a more advanced audience, making technological innovations difficult for beginners to understand. This site was created to help complete beginners better understand various tech concepts. Using the Feynman Technique, anyone can make a post explaining a tech topic in a beginner-friendly way. By posting about the lastest tech news, or exciting tech concepts, you can help us spread knowledge while cementing your own knowledge. Adapted from a challenge for www.appbrewery.com.";
 //text for the contact page
   const contactContent =
   "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
